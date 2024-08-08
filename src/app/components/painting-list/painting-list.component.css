@@ -1,0 +1,91 @@
+.thumbnail {
+  width: 150px;
+  height: auto;
+  max-height: 150px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  object-fit: cover;
+  transition: border-color 0.3s ease;
+}
+
+.thumbnail:hover {
+  border-color: #333;
+}
+
+.full-image {
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+
+.thumbnail-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+}
+
+.painting-detail {
+  text-align: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.painting-list-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+.painting-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.painting-item img {
+  width: 150px;
+  height: auto;
+  max-height: 150px;
+}
+
+.painting-item h2 {
+  margin: 0;
+  font-size: 14px;
+}
